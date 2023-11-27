@@ -7,26 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>
-        .content {
-            display: flex;
-            margin-top: 180px;
-        }
 
-        .lado-izquierdo {
-            flex: 2;
-            margin-left: 150px;
-        }
-
-        .lado-izquierdo img {
-            width: 300px;
-            height: auto;
-            border-radius: 30px;
-        }
-
-        .lado-derecho {
-            flex: 4;
-            margin-right: 150px;
-        }
     </style>
 </head>
 <body>
@@ -43,15 +24,20 @@
         </div>
 
         <div class="lado-derecho">
-            <h1>¡Bienvenido!</h1>
-            <p>Por favor, ingresa tus datos para poder agendar una cita.</p>
-                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
-                <input type="text" name="curp" placeholder="CURP" required>
-                <input type="text" name="telefono" placeholder="Telefono" required>
-                <input type="text" name="correo" placeholder="Correo" required>
-                <input type="text" name="fecha" placeholder="Fecha y hora" required>
-                <input type="text" name="medico" placeholder="Medico" required>
-                <button onclick="agendar()">Agendar cita</button>
+            <h1 class="title-froms">¡Bienvenido!</h1>
+            <p class="text-froms">Por favor, ingresa tus datos para poder agendar una cita.</p>
+                <input class="in-one" type="text" id="nombre" placeholder="Nombre y apellido" required>
+                <input class="in-one" type="text" id="curp" placeholder="CURP" required>
+                <input class="in-one" type="text" id="nss" placeholder="N° Seguro Social" required>
+                <br>
+                <input class="in-two" type="text" id="correo" placeholder="Correo" required>
+                <select name="medico" id="medico" class="in-two">
+                    <option>Médico de cabecéra</option>
+                    <option>DR. Dragoberto P.S.</option>
+                </select>
+                <br>
+                <textarea class="in-three" id="motivo" placeholder="Motivo de la consulta" required></textarea>
+                <button class="button-froms" onclick="agendar()">Agendar cita</button>
         </div>
     </header>
 </body>
