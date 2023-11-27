@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Citas ISSSTE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .content {
+            display: flex;
+            margin-top: 180px;
+        }
+
+        .lado-izquierdo {
+            flex: 2;
+            margin-left: 150px;
+        }
+
+        .lado-izquierdo img {
+            width: 300px;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .lado-derecho {
+            flex: 4;
+            margin-right: 150px;
+        }
+    </style>
 </head>
 <body>
-    
-    <div style="text-align: center; margin-top: 270px" >
-        <a class="btn btn-danger btn-lg" href="https://us.rule34.xxx//samples/7891/sample_32f90f383dbb0fdd1c7c092ced46f6c0.jpg?9020203" target="_blank" >Click aquí</a>
-    </div>
-    
+    <nav class="navegacion">
+        <p class="cinta">Citas ISSSTE</p>
+        <div class="botones1">
+            <a href="medico/index.html"><button class="enlaces"> Medico</button></a>
+            <a href="index.html"><button  class="enlaces">Cita</button></a>
+        </div>
+    </nav>
+    <header class="content">
+        <div class="lado-izquierdo">
+            <img src="img/cruz.jpeg" alt="Logo ISSSTE">
+        </div>
+
+        <div class="lado-derecho">
+            <h1>¡Bienvenido!</h1>
+            <p>Por favor, ingresa tus datos para poder agendar una cita.</p>
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                <input type="text" name="curp" placeholder="CURP" required>
+                <input type="text" name="telefono" placeholder="Telefono" required>
+                <input type="text" name="correo" placeholder="Correo" required>
+                <input type="text" name="fecha" placeholder="Fecha y hora" required>
+                <input type="text" name="medico" placeholder="Medico" required>
+                <button onclick="agendar()">Agendar cita</button>
+        </div>
+    </header>
 </body>
 </html>
