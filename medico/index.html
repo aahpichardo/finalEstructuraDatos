@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citas ISSSTE</title>
-    <script src="style-medic.css"></script>
-    <script src="../script.js"></script>
-    
+    <link rel="stylesheet" href="style-medic.css">
+    <script type="text/javascript" src="../script.js"></script>
 </head>
-<body>
-    
+<body onload="mostrarCita()">
+    <nav class="navegacion">
+        <p class="cinta">Datos de cita</p>
+        <div class="botones1">
+            <a href="index.html"><button class="enlaces"> Medico</button></a>
+            <a href="../index.html"><button  class="enlaces">Cita</button></a>
+            <script type="text/javascript" src="script.js"></script>
+        </div>
+    </nav>
+    <header class="content">
+        <div class="lado-izquierdo">
+            <img src="../img/medico.png" alt="Logo ISSSTE">
+        </div>
+
+        <div class="lado-derecho">
+            <h1 class="title">¡Bienvenido doctor!</h1>
+            <p class="text" id="conteo"></p>
+              <div class="datos-px">
+                <h2>Datos del paciente</h2>
+                <div class="flex-container">
+                <p class="in-one" type="text" id="nombre"></p>
+                <p class="in-one" type="text" id="curp"></p>
+                <p class="in-one" type="text" id="nss"></p>
+               </div>
+               <div class="flex-container">
+                <p class="in-two" type="email" id="email"> </p>
+                <p name="medico" id="medico" class="in-two"> </p>
+               </div>
+                <p class="in-three" id="motivo"></p>
+                <button class="button-froms" onclick="siguienteCita()">Siguiente paciente</button>
+              </div>
+               
+        </div>
+    </header>
 </body>
 </html>
