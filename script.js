@@ -25,6 +25,7 @@ class verCitas { // Clase para manejar las citas
 
 var obCitas = new verCitas(); // Se crea el objeto de la clase verCitas
 
+//index cita
 function agendar(){ // Función para agregar una cita
     var nombre = document.getElementById("nombre").value; // Se obtiene el nombre
     var curp = document.getElementById("curp").value; // Se obtiene la curp
@@ -36,8 +37,9 @@ function agendar(){ // Función para agregar una cita
     obCitas.Push(cita); // Se agrega la cita
 }
 
+//medico
 function mostrarCita(){ // Función para mostrar la cita
-    var num = obCitas.Size(); // Se obtiene el tamaño del arreglo
+    var num = obCitas.Size(); // Se obtiene el tamaño del arreglo, cuantas citas hay
     if (num>0){ // Si hay citas
       document.getElementById("conteo").innerHTML = "Tiene "+ (num-1) +" cita(s) mas pendientes para hoy."; // Se muestra el número de citas
       var campos = ["nombre", "curp", "nss", "email", "medico", "motivo"]; // Se obtienen los campos
