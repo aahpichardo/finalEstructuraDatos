@@ -1,3 +1,6 @@
+body {
+    background: linear-gradient(to left, #fffcec 0%, #fffcec 80%, #d3d3d3 100%);
+}
 .navegacion {
     background-color: #230b42;
     padding: 10px;
@@ -52,3 +55,126 @@ a {
     justify-content: flex-end;
     margin-right: 60px;
 }
+
+.content {
+    display: flex;
+    margin-top: 180px;
+}
+
+.lado-izquierdo {
+    flex: 2;
+    margin-left: 150px;
+}
+
+.lado-izquierdo img {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.lado-derecho {
+    flex: 4;
+    margin-right: 150px;
+}
+
+.title-froms {
+    color: #333;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.text-froms {
+    color: #3f3f3f;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.in-one {
+    width: 30.7%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.in-two {
+    width: 48%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.in-three {
+    width: 96.6%;
+    height: 55px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    resize: none; 
+    font-family: Arial, sans-serif;
+}
+
+.button-froms {
+    width: 30%;
+    height: 40px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:  #75408f;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: block;
+} 
+
+.button-froms:hover {
+    background-color: rgb(136, 126, 193);
+}
+
+@media screen and (max-width: 1440px) {
+    .lado-izquierdo img {
+        width: 80%;
+    }
+
+    .in-one {
+        width: 29.7%;
+    }
+
+    .button-froms {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .enlaces{
+        width: 90px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    .lado-izquierdo,
+    .lado-derecho {
+        margin: 10px;
+    }
+
+    .lado-izquierdo img {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .in-one,
+    .in-two,
+    .in-three {
+        width: 95%;
+    }
+}
+
