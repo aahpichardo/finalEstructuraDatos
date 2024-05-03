@@ -1,4 +1,4 @@
-# finalEstructuraDatos
+# Citas médicas (estructura de datos)
 Final de estructura de datos (citas)
 El sistema cuenta con una sección de citas que requiere completar todos los campos obligatorios. Aunque no se emite un mensaje de confirmación al enviar la solicitud, la sección correspondiente al médico muestra la cita programada.
 
